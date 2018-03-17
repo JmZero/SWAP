@@ -3,7 +3,7 @@
 En esta primera práctica vamos a realizar las preparaciones previas para llevar a cabo las prácticas posteriores.
 
 ### 1. Instalación
-En primer lugar tendremos que crear nuestras máquinas virtulaes, bien una por una o configurando completamente una de ellas y posteriormente clonándola. Al clonar nuestra máquina evitaremos que las MAC sean las mismas.
+En primer lugar tendremos que crear nuestras máquinas virtuales, bien una por una o configurando completamente una de ellas y posteriormente clonándola. Al clonar nuestra máquina evitaremos que las MAC sean las mismas.
 Se ha instalado Ubuntu Server 16.04 en una máquina virtual con la configuración por defecto que nos ofrece VirtualBox (1GB de memoria RAM y 10 GB de almacenamiento. Para configurar la máquina se ha usado la configuración por defecto y se ha usado la herramienta para instalar LAMP y SSH (como se explica en el guión).
 
 ### 2. Configuración de la red Host-Only
@@ -34,4 +34,4 @@ A continuación se muestran las capturas del procedimiento en las dos máquinas 
 Comprobaremos que ya tenemos el comando curl instalado, cuya función es transferir archivos con sintaxis URL. Para comprobar que Apache funciona correctamente vamos a crear un archivo `hola.html` en el directorio `/var/www/html`.
 A continuación se muestran las capturas del procedimiento en las 2 máquinas haciendo uso del comando `curl http://direccionIPdelservidor/hola.html`.
 
-<center>![Curl.png](https://github.com/JmZero/SWAP/blob/master/Practica1/Curl.png)</center>
+<center> ![Curl.png](https://github.com/JmZero/SWAP/blob/master/Practica1/Curl.png) </center>
