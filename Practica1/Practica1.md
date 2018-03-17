@@ -28,7 +28,7 @@ Posteriormente ejecutaremos el comando `/etc/init.d/networking restart` para rei
 Como ya hemos instalado ssh y hemos configurado la interfaz de red vamos a comprobar su funcionamiento conectándonos desde la primera máquina a la segunda y viceversa.
 A continuación se muestran las capturas del procedimiento en las dos máquinas haciendo uso del comando `ssh [nombre_usuario]@[ip_máquina]`.
 
-![SSH.png](https://github.com/JmZero/SWAP/blob/master/Practica1/SSH.png)
+<p align="center"> <img src="https://github.com/JmZero/SWAP/blob/master/Practica1/SSH.png" title="SSH.png"> </p>
 
 ### 4. Acceso con Curl y comprobar Apache
 Comprobaremos que ya tenemos el comando curl instalado, cuya función es transferir archivos con sintaxis URL. Para comprobar que Apache funciona correctamente vamos a crear un archivo `hola.html` en el directorio `/var/www/html`.
