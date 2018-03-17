@@ -34,4 +34,4 @@ A continuación se muestran las capturas del procedimiento en las dos máquinas 
 Comprobaremos que ya tenemos el comando curl instalado, cuya función es transferir archivos con sintaxis URL. Para comprobar que Apache funciona correctamente vamos a crear un archivo `hola.html` en el directorio `/var/www/html`.
 A continuación se muestran las capturas del procedimiento en las 2 máquinas haciendo uso del comando `curl http://direccionIPdelservidor/hola.html`.
 
-![Curl.png](https://github.com/JmZero/SWAP/blob/master/Practica1/Curl.png)
+<center>![Curl.png](https://github.com/JmZero/SWAP/blob/master/Practica1/Curl.png)</center>
