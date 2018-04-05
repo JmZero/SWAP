@@ -58,8 +58,8 @@ Ya hemos solucionado el acceso sin hacer uso de contraseña, pero aun así neces
 
 En nuestro caso vamos a modificar el fichero para que realice la actualización de los archivos de **/var/www/** en la segunda máquina cada hora. Podemos observar como se realiza esto en la siguiente imagen:
 
-<p align="center"> <img src="https://github.com/JmZero/SWAP/blob/master/Practica2/crontab1.png"> </p>
+<p align="center"> <img src="https://github.com/JmZero/SWAP/blob/master/Practica2/crontab2.png"> </p>
 
 Como vemos en la siguiente demostración, el primer fichero que se nos muestra es el que originalmente tiene la segunda máquina, tras editar el fichero **/etc/crontab** (como en la imagen anterior) y que pase de las **:00** de la siguente hora podremos observar que si volvemos a mostrar el contenido del fichero este se habrá modificado siendo una copia del fichero que originalmente pertenece a la primera máquina.
 
-<p align="center"> <img src="https://github.com/JmZero/SWAP/blob/master/Practica2/crontab2.png"> </p>
+<p align="center"> <img src="https://github.com/JmZero/SWAP/blob/master/Practica2/crontab1.png"> </p>
