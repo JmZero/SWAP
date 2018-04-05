@@ -7,11 +7,11 @@ Para llevar a cabo este apartado lo primero que debemos hacer es crear un archiv
 
 Unicamente requeriremos del siguiente comando: `tar czf - [directorio] | ssh [nombre_usuario]@[ip_máquina] 'cat > ~/tar.tgz'`
 
-![SSH.png](https://github.com/JmZero/SWAP/blob/master/Practica2/tar1.png)
+<p align="center"> <img src="https://github.com/JmZero/SWAP/blob/master/Practica2/tar1.png"> </p>
 
 Una vez ejecutado el comando en la primera máquina procederemos a comprobar que en la segunda se a creado dicho archivo y si su contenido corresponde con el que hemos comprimido de la primera máquina.
 
-![SSH.png](https://github.com/JmZero/SWAP/blob/master/Practica2/tar2.png)
+<p align="center"> <img src="https://github.com/JmZero/SWAP/blob/master/Practica2/tar2.png"> </p>
 
 Como vemos todo a funcionado correctamente.
 
@@ -24,7 +24,7 @@ Para probar el funcionamiento de **rsync** vamos a realizar una copia de los arc
 
 Ahora realizaremos una comprobación para asegurarnos de que se han copiado todos los archivos y directorios de la primera máquina en la segunda.
 
-![SSH.png](https://github.com/JmZero/SWAP/blob/master/Practica2/rsync.png)
+<p align="center"> <img src="https://github.com/JmZero/SWAP/blob/master/Practica2/rsync.png"> </p>
 
 En la imagen anterior podemos comprobar el correcto funcionamiento del proceso. Dado que contamos con un archivo **hola.html** en cada máquina, cada uno con un contenido diferente, se muestra en primer lugar el contenido del archivo en la segunda máquina, después se ejecuta el comando **rsync** y volvemos a mostrar el mismo archivo. Como podemos observar el contenido del archivo se ha modificado y corresponde con el contenido del archivo de la primera máquina.
 
@@ -33,23 +33,23 @@ Como hemos visto en el apartado anterior, el uso de **rsync** nos permitirá ten
 
 Para solventar el problema haremos uso de las claves **públicas-privadas**. Usando el siguiente comando `ssh-keygen -b 4096 -t rsa` en la segunda máquina generaremos la clave pública y privada para esa máquina.
 
-![SSH.png](https://github.com/JmZero/SWAP/blob/master/Practica2/keygen1.png)
+<p align="center"> <img src="https://github.com/JmZero/SWAP/blob/master/Practica2/keygen1.png"> </p>
 
 **Nota: Para toda opción de que se nos de en la creación de las claves daremos a Intro para no escribir nada, dado que podría suponer un problema en el futuro.**
 
 Tras generar las claves, tendremos que copiar la clave pública en el equipo remoto, en nuestro caso la primera máquina. Para realizar la copia de la clave unicamente tendremos que ejecutar el comando `ssh-copy-id [nombre_usuario]@[ip_máquina]`.
 
-![SSH.png](https://github.com/JmZero/SWAP/blob/master/Practica2/keygen2.png)
+<p align="center"> <img src="https://github.com/JmZero/SWAP/blob/master/Practica2/keygen2.png"> </p>
 
 **Nota: Puede que nos encontremos un problema al copiar la clave pública en el otro equipo. Esto pude deberse a que el fichero ~/.ssh/authorized_keys carecerá de permisos 600, por lo que usaremos el comando `chmod 600 ~/.ssh/authorized_keys` para solventarlo.**
 
 En este punto ya deberíamos poder realizar las copias de los archivos sin necesidad de introducir ninguna contraseña.
 
-![SSH.png](https://github.com/JmZero/SWAP/blob/master/Practica2/keygen3.png)
+<p align="center"> <img src="https://github.com/JmZero/SWAP/blob/master/Practica2/keygen3.png"> </p>
 
 En la imagen anterior comprobamos como accediendo de la segunda máquina a la primera no se nos pide ninguna contraseña al ejecutar **ssh**
 
-![SSH.png](https://github.com/JmZero/SWAP/blob/master/Practica2/keygen4.png)
+<p align="center"> <img src="https://github.com/JmZero/SWAP/blob/master/Practica2/keygen4.png"> </p>
 
 En la imagen anterior podemos comprobar como tambien podemos ejecutar ordenes en la primera máquina sin necesidad de acceder a ella directamente sin que nos pidan una contraseña.
 
@@ -58,8 +58,8 @@ Ya hemos solucionado el acceso sin hacer uso de contraseña, pero aun así neces
 
 En nuestro caso vamos a modificar el fichero para que realice la actualización de los archivos de **/var/www/** en la segunda máquina cada hora. Podemos observar como se realiza esto en la siguiente imagen:
 
-![SSH.png](https://github.com/JmZero/SWAP/blob/master/Practica2/crontab1.png)
+<p align="center"> <img src="https://github.com/JmZero/SWAP/blob/master/Practica2/crontab1.png"> </p>
 
 Como vemos en la siguiente demostración, el primer fichero que se nos muestra es el que originalmente tiene la segunda máquina, tras editar el fichero **/etc/crontab** (como en la imagen anterior) y que pase de las **:00** de la siguente hora podremos observar que si volvemos a mostrar el contenido del fichero este se habrá modificado siendo una copia del fichero que originalmente pertenece a la primera máquina.
 
-![SSH.png](https://github.com/JmZero/SWAP/blob/master/Practica2/ccrontab2.png)
+<p align="center"> <img src="https://github.com/JmZero/SWAP/blob/master/Practica2/crontab2.png"> </p>
