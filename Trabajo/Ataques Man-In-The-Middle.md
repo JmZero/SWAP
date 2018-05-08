@@ -37,16 +37,16 @@ http://noticiasseguridad.com/hacking-incidentes/descubren-que-se-pueden-realizar
 Para realizar una simulación de un ataque Man-In-The-Middle vamos a utilizar una herramienta llamada *Cain*. Para poder usarla lo primero que debemos hacer es desavilitar el firewall. Despues de esto accederemos a la herramienta y rpocederemos a configurarla: **Configure** --> **Seleccionamos el adaptador cuya IP corresponde a nuestra máquina anfitriona**. 
 Una vez configurada accederemos a la pestana **Sniffer** y le daremos al boton `+` para añadir todos los host que se encuentrar en la red (deberemos tener activada la opción de sniffer). Postariormente comprobaremos la IP que corresponde a la máquina virtual que vamos a atacar.
 
-imagen
+<p align="center"> <img src="https://github.com/JmZero/SWAP/blob/master/Trabajo/Captura 1.png" title="Captura 1.png"> </p>
 
 Una vez obteniada accederemos a la apestana **ARP** dentro de **Sniffer** y le daremos a la opcion `+` y seleccionaremos en primer lugar la máquina víctima y posteriormente la máquina atacante (nuestro PC). 
 
-Imagen
+<p align="center"> <img src="https://github.com/JmZero/SWAP/blob/master/Trabajo/Captura 2.png" title="Captura 2.png"> </p>
 
 Despues activaremos la opcion Star/Stop ARP y ya procederemos al robo de la contraseña. Para ello vamos a usar una pagina que usa **HTTP** a la que accederemos en la máquina virtual. Una vez escrita la contraseña iremos a la pestaña **Passwords** a la opción **HTTP** y alli aparecera la contraseña que hemos utilizado:
 
-Imagen
+<p align="center"> <img src="https://github.com/JmZero/SWAP/blob/master/Trabajo/Captura 3.png" title="Captura 3.png"> </p>
 
 Ahora vamos a hacer otro ataque redireccionando una página a otra. Para ello accederemos dentro de la pestaña **ARP** a la opción **ARP-DNS** y volveremos a añadir una configuración con el boton `+`. En primer lugar escribiremos la direccion de la página a la que se accedera y en segundo lugar la página a la que se redirecciona.
 
-imagen
+<p align="center"> <img src="https://github.com/JmZero/SWAP/blob/master/Trabajo/Captura 4.png" title="Captura 4.png"> </p>
