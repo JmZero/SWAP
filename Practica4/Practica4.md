@@ -1,4 +1,4 @@
-# Práctica 3 - Balanceo de carga
+# Práctica 4 - Asegurar la granja web
 Para esta práctica vamos a llevar a acbo la configuracion de la seguridad de la granja web.
 Pare ello tendremos que instalar un certificado **SSL** para configurar el acceso por **HTTPS** a los servidores y cinfigurar reglas en el cortafuegos de la granja web.
 
